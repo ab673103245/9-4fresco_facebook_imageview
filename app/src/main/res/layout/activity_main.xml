@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    tools:context="qianfeng.a9_4fresco_facebook_imageview.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        fresco:fadeDuration="3000"
+        fresco:roundAsCircle="true"/>
+    <!--  fresco:roundAsCircle 画一个圆形的图片(相当于自定义ImageView的圆形图案) -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv3"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        fresco:roundedCornerRadius="10dp"/>
+    <!--  fresco:roundedCornerRadius 画圆角矩形 -->
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv4"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:id="@+id/sdv5"
+        android:layout_width="200dp"
+        android:layout_height="200dp"/>
+
+</LinearLayout>
+</ScrollView>
